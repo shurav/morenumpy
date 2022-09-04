@@ -7,3 +7,13 @@ for i in range(a):
 b = numpy.array(numarray)
 for i in numpy.nditer(b):
     print(i)
+for i, j in numpy.ndenumerate(b):
+    print(i, j)
+c = numpy.random.randint(20)
+c = numpy.random.rand()
+c = numpy.random.randint(20, size = 3)
+print(c)
+d = numpy.random.rand(3, 3, 3)
+print(d)
+e = numpy.random.choice([4, 1, 2], size = (3, 2))
+print(e)
